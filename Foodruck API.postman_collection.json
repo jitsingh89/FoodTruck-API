@@ -1,0 +1,236 @@
+{
+	"info": {
+		"_postman_id": "dd3d5a4f-d60a-408f-9920-837ba71a62f2",
+		"name": "Foodruck API collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "foodtruck/add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlYTQ3YzY1OTU3NmMyMjg0Y2VjMmYwMyIsImlhdCI6MTU4NzgzODIzNSwiZXhwIjoxNTkwNDMwMjM1fQ.dwhO-akwHyK43ZhTEiWjtKqzvtenOWxI1zZ-qkZyFzQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n \"name\" : \"Jitendra\",\n \"foodtype\": \"indian\",\n \"avgcost\": 12.99,\n \"geometry\": {\n\t\"coordinates\" : [20,40]\n  }\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3005/V1/foodtruck/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"V1",
+						"foodtruck",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "foodtruck",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlYTQ3YzY1OTU3NmMyMjg0Y2VjMmYwMyIsImlhdCI6MTU4NzgzODIzNSwiZXhwIjoxNTkwNDMwMjM1fQ.dwhO-akwHyK43ZhTEiWjtKqzvtenOWxI1zZ-qkZyFzQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3005/V1/foodtruck",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"V1",
+						"foodtruck"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "foodtruck/id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlYTQ3YzY1OTU3NmMyMjg0Y2VjMmYwMyIsImlhdCI6MTU4NzgzODIzNSwiZXhwIjoxNTkwNDMwMjM1fQ.dwhO-akwHyK43ZhTEiWjtKqzvtenOWxI1zZ-qkZyFzQ",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3005/V1/foodtruck/5ea476f2a30ac21b68552680",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"V1",
+						"foodtruck",
+						"5ea476f2a30ac21b68552680"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "foodtruck/id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlYTQ3YzY1OTU3NmMyMjg0Y2VjMmYwMyIsImlhdCI6MTU4NzgzODIzNSwiZXhwIjoxNTkwNDMwMjM1fQ.dwhO-akwHyK43ZhTEiWjtKqzvtenOWxI1zZ-qkZyFzQ",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3005/V1/foodtruck/5ea476f2a30ac21b68552680",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"V1",
+						"foodtruck",
+						"5ea476f2a30ac21b68552680"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "account/me",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlYTQ3YzY1OTU3NmMyMjg0Y2VjMmYwMyIsImlhdCI6MTU4NzgzODIzNSwiZXhwIjoxNTkwNDMwMjM1fQ.dwhO-akwHyK43ZhTEiWjtKqzvtenOWxI1zZ-qkZyFzQ",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3005/V1/account/me",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"V1",
+						"account",
+						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "account/register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\" : \"jitsingh79@gmail.com\",\n\t\"password\" : \"singh1989\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3005/V1/account/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"V1",
+						"account",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "account/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\" : \"jitsingh79@gmail.com\",\n\t\"password\" : \"singh1989\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3005/V1/account/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"V1",
+						"account",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
